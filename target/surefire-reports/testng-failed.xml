@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="seleniumCourse.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Standalone Test(failed)" verbose="0">
+    <classes>
+      <class name="seleniumCourse.seleniumFrameDesign.StandalonePOMTest">
+        <methods>
+          <include name="orderHistoryTest"/>
+          <include name="launchApplication"/>
+          <include name="Standalone" invocation-numbers="0 1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- seleniumCourse.seleniumFrameDesign.StandalonePOMTest -->
+    </classes>
+  </test> <!-- Standalone Test(failed) -->
+  <test thread-count="5" parallel="tests" name="Error Validations Test(failed)" verbose="0">
+    <classes>
+      <class name="seleniumCourse.seleniumFrameDesign.ErrorValidations">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="pdtErrorValidation"/>
+          <include name="errorMsg"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- seleniumCourse.seleniumFrameDesign.ErrorValidations -->
+    </classes>
+  </test> <!-- Error Validations Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
