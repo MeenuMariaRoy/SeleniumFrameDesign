@@ -8,6 +8,8 @@ public class GitDemo {
 	public void gitDemoTest()
 	{
 		System.out.println("Im a demo for git test in my work folder");
+		System.out.println("changed again");
+		System.out.println("changed once more");
 	}
 
 }
