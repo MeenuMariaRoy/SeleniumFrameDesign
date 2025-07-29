@@ -11,6 +11,12 @@ public class GitDemo {
 		System.out.println("changed again");
 		System.out.println("changed once more");
 	}
+	
+	@Test
+	public void Test2()
+	{
+		System.out.println("America changed");
+	}
 
 }
 
